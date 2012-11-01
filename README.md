@@ -19,7 +19,7 @@ JS
 -------
 Сниппеты JavaScript.
 
-* для JQuery
+* для jQuery
 * для популярных плагинов на jQuery
 
 SQL

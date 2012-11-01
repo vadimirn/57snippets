@@ -1,5 +1,5 @@
 /**
- * jQuery плагин choosen для организации автокомплита
+ * jQuery плагин chosen для организации автокомплита
  * @see https://github.com/harvesthq/chosen
  * Автокомлит с Ajax загрузкой элементов
  */

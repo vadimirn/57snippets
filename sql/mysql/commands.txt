@@ -1,0 +1,7 @@
+# 
+# Консольные *nix - команды для работы с MySQL
+#
+#
+
+# Восстановление из дампа
+mysql -u #username# -p #database# < #dump_file#

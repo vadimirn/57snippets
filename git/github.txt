@@ -9,3 +9,12 @@ git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/57uff3r/57snippets.git
 git push -u origin maste
+
+
+#
+# Создание локального git-репозитория (например, в /var/git/ideamaker/)
+#
+git init
+git config --bool core.bare true
+# переходим в рабочую директорию
+git clone --local /var/git/ideamaker/

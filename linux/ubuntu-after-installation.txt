@@ -1,0 +1,26 @@
+#
+# перед установкой добавить следующие репозитории
+# /etc/apt/sources.list 
+# следующие репозитории
+#
+
+## skype repository
+deb http://ru.archive.ubuntu.com/ubuntu/ oneiric-proposed restricted main multiverse universe
+deb http://download.skype.com/linux/repos/debian/ stable non-free
+
+## mongo 10gen repository
+deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen
+
+## opera browser repository
+deb http://deb.opera.com/opera/ stable non-free
+
+
+#
+# Установка кучи софта сразу после установки OC
+# - системы контроля версий
+# - веб-сервер
+# - php и его расширения
+# - программы учета времени
+# - мессенджеры 
+
+apt-get install git-all apache2 mysql-server php5 hamster-applet skype opera

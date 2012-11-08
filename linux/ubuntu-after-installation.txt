@@ -23,4 +23,5 @@ deb http://deb.opera.com/opera/ stable non-free
 # - программы учета времени
 # - мессенджеры 
 
-apt-get install git-all apache2 mysql-server php5 hamster-applet skype opera
+apt-get install git-all apache2 mysql-server php5 hamster-applet skype opera nodejs npm 
+tortoisehg mercurial

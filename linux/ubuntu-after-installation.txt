@@ -24,4 +24,7 @@ deb http://deb.opera.com/opera/ stable non-free
 # - мессенджеры 
 
 apt-get install git-all apache2 mysql-server php5 hamster-applet skype opera nodejs npm 
-tortoisehg mercurial
+tortoisehg mercurial phpmyadmin
+
+
+# не забыть поставить программу для разработки макетов - http://pencil.evolus.vn/Downloads.html

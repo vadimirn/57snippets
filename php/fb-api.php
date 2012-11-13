@@ -56,7 +56,7 @@ function getToken() {
 function sendNotifications($fb_id, $token, $msg, $href = '') {
 	$attachment = array(
 		'access_token' 	=> $token,
-		'href' 			=> $hrf,
+		'href' 			=> $href,
 		'template'		=> $msg
 	);
 

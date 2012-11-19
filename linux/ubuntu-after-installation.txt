@@ -24,7 +24,22 @@ deb http://deb.opera.com/opera/ stable non-free
 # - мессенджеры 
 
 apt-get install git-all apache2 mysql-server php5 hamster-applet skype opera nodejs npm 
-tortoisehg mercurial phpmyadmin php5-curl
+tortoisehg mercurial phpmyadmin php5-curl vlan
 
 
 # не забыть поставить программу для разработки макетов - http://pencil.evolus.vn/Downloads.html
+
+#
+# Настройка vnstat для учета трафика
+#
+
+sudo chmod o+x /usr/bin/vnstat
+sudo chmod o+wx /var/lib/vnstat/
+
+# Эта команда запустит сбор информации по трафику
+vnstat -u -i wlan0
+
+# Для просмотра можно использовать команду
+vnstat  -i wlan0
+
+

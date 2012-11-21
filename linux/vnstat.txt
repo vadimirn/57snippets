@@ -1,0 +1,15 @@
+#
+# Настройка vnstat для учета трафика
+#
+
+sudo chmod o+x /usr/bin/vnstat
+sudo chmod o+wx /var/lib/vnstat/
+
+# Эта команда запустит сбор информации по трафику
+vnstat -u -i wlan0
+
+# Для просмотра можно использовать команду
+vnstat  -i wlan0
+
+# Для сброса статистики
+vnstat -i wlan0 -u -r --disable; rm /var/lib/vnstat/wlan0; vnstat -u -i wlan0

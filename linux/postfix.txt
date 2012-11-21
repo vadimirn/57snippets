@@ -1,0 +1,19 @@
+#
+# Настройка POSTFIX для локальных тестов
+# отправки почты при разработке.
+#
+
+# В файл /etc/postfix/main.cf добавляется строчка
+# header_checks = regexp:/etc/postfix/header_checks
+
+# создаётся файл /etc/postfix/header_checks, в него добавляется такая строчка: 
+# /^Received:/ HOLD
+
+postmap /etc/postfix/header_checks
+
+postfix reload
+
+# почта попадает в каталог /var/spool/postfix/hold
+
+# просмотр почты в очереди
+pfqueue -q 4

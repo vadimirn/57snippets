@@ -5,3 +5,7 @@
 
 # Восстановление из дампа
 mysql -u #username# -p #database# < #dump_file#
+
+# Очистить все таблицы от данных
+mysql -u root -pYOUR_PASSWORD -Nse 'show tables' alineo | while read table; do mysql -u root -pYOUR_PASSWORD  -e "truncate table $table" alineo; done
+

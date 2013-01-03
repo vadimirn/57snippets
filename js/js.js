@@ -22,3 +22,15 @@ Array.prototype.shuffle = function() {
 
    return this;
 };
+
+// url decode на клиенте
+var decode      = function (s) { return decodeURIComponent(s.replace(/\+/g, " ")); };
+
+// Удаление хеша из адреса
+var loc = window.location.href;
+  index = loc.indexOf('#');
+if (index > 0) {
+  window.location = loc.substring(0, index);
+}
+
+
